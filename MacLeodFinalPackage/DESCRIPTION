@@ -1,0 +1,19 @@
+Package: MacLeodFinalPackage
+Title: Scrape Website for Hockey Statistics
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Ian",
+           family = "MacLeod",
+           role = c("aut", "cre"),
+           email = "imacleod@usf.edu")
+Description: This package will take a year and a specific stat (goals, assists, points, etc.) as user input, then
+    use that input to scrape the league leaders for that statistic from the corresponding year. Data will be 
+    scraped from https://www.hockey-reference.com/. Default will be set to the top 30 players for any given
+    statistic, but user can optionally specify the number to print. The 'rvest' package will be used for 
+    scraping, while the 'dplyr' package will be used for the sorting.
+Imports: 
+    rvest,
+    dplyr
+License: CC0 1.0
+Encoding: UTF-8
+LazyData: true
